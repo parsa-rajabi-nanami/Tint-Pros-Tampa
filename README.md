@@ -35,7 +35,7 @@ The application lives in `artifacts/tint-pros-tampa` because the repository is a
 
 ```text
 artifacts/tint-pros-tampa/
-├── public/                 # Favicon, robots.txt, and static marketing images
+├── public/                 # Favicon, robots.txt, and static images
 ├── src/
 │   ├── components/
 │   │   ├── common/         # Header, footer, brand mark, shared labels, error boundary
