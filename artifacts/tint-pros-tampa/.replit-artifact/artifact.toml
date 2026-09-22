@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Tint Pros Tampa"
+description = "A customer-facing website for Tint Pros Tampa, a mobile window tinting, paint protection film, and vinyl wrap service serving Tampa Bay."
+version = "1.0.0"
+id = "artifacts/tint-pros-tampa"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20245
+
+[services.development]
+run = "pnpm --filter @workspace/tint-pros-tampa run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/tint-pros-tampa", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/tint-pros-tampa/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20245"
+BASE_PATH = "/"

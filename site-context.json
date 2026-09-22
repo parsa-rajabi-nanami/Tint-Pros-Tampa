@@ -1,0 +1,260 @@
+{
+  "metadata": {
+    "source_url": "https://tintprostampa.com/",
+    "source_type": "single-page public website",
+    "crawled_on": "2026-09-22",
+    "page_title": "Tint Pro's Tampa - Home",
+    "meta_description": "We offer a mobile window tinting service for auto tint, commercial window tinting, and residential window tinting. We offer PPF film and vinyl wraps.",
+    "extraction_note": "The public site currently exposes the requested content as sections on the home page. Separate /services, /about, /contact, /gallery, /reviews, and /faq routes were not accessible during the crawl. Repeated Wix section headings have been de-duplicated; the copy itself is preserved verbatim, including spelling, capitalization, and punctuation errors."
+  },
+  "brand_identity_and_meta": {
+    "official_business_name": "Tint Pro's Tampa",
+    "alternate_names_used_on_site": [
+      "Tint Pros Tampa",
+      "Tint Pros of Tampa Bay Florida",
+      "Tint Pros of Tampa Florida",
+      "Tint Pro's of Tampa"
+    ],
+    "taglines_and_value_props": [
+      "PROFESSIONAL MOBILE window tinting of Tampa bay. STAY COOLER IN MINUTES",
+      "AUTO* RESIDENTIAL* COMMERCIAL* AND MARINE.",
+      "LIFETIME WARFRANTY. SAME-DAY SERVICE AVAILABLE. 500+ HAPPY REVIEWS",
+      "BLOCK HEAT* REDUCe GLARE* PROTECT YOUR INTERIOR.",
+      "GET NANO CERAMIC WINDOW TINT!!",
+      "We have been tinting cars for over 22 yeaars",
+      "Let Tint Pro's wrap your vehicle with a new color change",
+      "Protect your cars paint with PPF film installation",
+      "Customer service and quality.",
+      "Best installation and computer cuts.",
+      "Convenience= We have mobile service that comes to you at any location. FREE service within Tampa Bay area.",
+      "Price= We have the best price for Window tinting, Paint protection films and Vinyl film car wraps in Tampa Bay. CALL FOR FREE QUOTES."
+    ],
+    "logo_urls": {
+      "dedicated_logo_asset": null,
+      "site_card_image": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/card.png",
+      "note": "No dedicated SVG/PNG/WebP logo file was exposed in the crawl. card.png is the site's social/share card asset, not confirmed to be a logo-only file."
+    },
+    "color_palette_extracted_from_page_css": {
+      "primary_red": "#D22F25",
+      "black": "#000000",
+      "white": "#FFFFFF",
+      "light_gray": "#CCCCCC",
+      "yellow": "#FFFF00",
+      "note": "#D22F25, #000, #CCC, #FFFFFF, and #ff0 were present in the downloaded page HTML/CSS. Exact semantic role assignment is inferred from usage and may include widget defaults."
+    },
+    "typography_observed": [
+      "Archivo Black",
+      "Cabin",
+      "Lato",
+      "Montserrat"
+    ],
+    "brand_tone_and_persona": "Local, direct-response, convenience-led mobile service with an emphasis on cooling, glare reduction, interior protection, lifetime warranty, speed, computer-cut installation, and broad Tampa Bay coverage. The copy is promotional and informal rather than luxury-oriented; it uses emphatic capitalization and urgent calls to action."
+  },
+  "contact_and_local_seo": {
+    "primary_phone_numbers": [
+      {
+        "display": "(813) 787-5327",
+        "click_to_call": "tel:+18137875327",
+        "site_copy": "CALL OR TEXT 813-787-5327 FOR SERVICE"
+      }
+    ],
+    "physical_address_or_shop_location": {
+      "site_listing": "Tampa, Florida 33624, United States",
+      "street_address": null,
+      "note": "The site identifies itself as mobile and does not publish a street address. Third-party listings show conflicting street addresses, so none is promoted as the official site address."
+    },
+    "service_areas_listed": [
+      "Tampa",
+      "Brandon",
+      "Clearwater",
+      "Land O Lakes",
+      "Largo",
+      "Odessa",
+      "New Tampa",
+      "Oldsmar",
+      "Palm Harbor",
+      "Pinellas Park",
+      "St.Pete",
+      "Town'n'Country",
+      "Safety Harbor",
+      "Dunedin",
+      "Lutz",
+      "New Port Richey",
+      "Riverview",
+      "Temple Terrace",
+      "Valrico",
+      "Tampa Palms",
+      "Wesley Chapel",
+      "Tarpon Springs",
+      "surrounding cities"
+    ],
+    "service_area_copy": "Tint Pros of Tampa Florida services these surrounding areas: Tampa, Brandon, Clearwater, Land O Lakes, Largo, Odessa, New Tampa, Oldsmar, Palm Harbor, Pinellas Park, St.Pete, Town'n'Country , Safety Harbor, Dunedin, Lutz, New Port Richey, Riverview, Temple Terrace, Valrico, Tampa Palms, Wesley Chapel, Tarpon Springs and surrounding cities, or use our Zip Codes as a where we service guide.",
+    "service_zip_codes": ["33601", "33602", "33603", "33604", "33605", "33606", "33607", "33608", "33609", "33610", "33611", "33612", "33613", "33614", "33615", "33616", "33617", "33618", "33619", "33620", "33621", "33622", "33623", "33624", "33625", "33626", "33629", "33630", "33631", "33633", "33634", "33635", "33637", "33646", "33647", "33650", "33655", "33660", "33661", "33662", "33663", "33664", "33672", "33673", "33674", "33675", "33677", "33679", "33680", "33681", "33682", "33684", "33685", "33686", "33687", "33688", "33689", "33694"],
+    "working_hours": {
+      "monday_saturday": "9AM–6PM",
+      "sunday": "Closed",
+      "verbatim_copy": "Monday - Saturday: 9AM–6PM\nSunday: Closed"
+    },
+    "google_maps_embed_or_business_profile": null,
+    "social_media_links": {
+      "youtube_channel_or_video": "https://www.youtube.com/watch?v=FRrRJiA28Vg&feature=youtu.be",
+      "embedded_youtube_video": "https://youtube.com/embed/WmOHUfvejII?rel=0&showinfo=0&start=0&autoplay=0&loop=0&muted=0&controls=1",
+      "instagram": null,
+      "facebook": null,
+      "yelp": null,
+      "tiktok": null,
+      "note": "No Instagram, Facebook, Yelp, TikTok, or Google Business Profile URL was linked in the page HTML."
+    }
+  },
+  "exact_copy_by_section": {
+    "hero": {
+      "h1": "PROFESSIONAL MOBILE window tinting of Tampa bay. STAY COOLER IN MINUTES",
+      "subheadline": "AUTO* RESIDENTIAL* COMMERCIAL* AND MARINE.",
+      "supporting_proof": "LIFETIME WARFRANTY. SAME-DAY SERVICE AVAILABLE. 500+ HAPPY REVIEWS",
+      "primary_cta": "CALL OR TEXT 813-787-5327 FOR SERVICE"
+    },
+    "benefits": [
+      "BLOCK HEAT* REDUCe GLARE* PROTECT YOUR INTERIOR.",
+      "Customer service and quality.",
+      "Best installation and computer cuts.",
+      "Warranty= lifetime Warranty on our auto films and residential films.",
+      "Convenience= We have mobile service that comes to you at any location. FREE service within Tampa Bay area.",
+      "Price= We have the best price for Window tinting, Paint protection films and Vinyl film car wraps in Tampa Bay. CALL FOR FREE QUOTES."
+    ],
+    "computer_cut_and_ceramic_copy": [
+      "NANO CERAMIC WINDOW TINT IS THE BEST QUALITY FILM ON THE MARKET FOR YOUR CAR. IT HAS THE HIGHEST HEAT PROTECTION FOR THE SKIN AND EYES.",
+      "THE FILM BLOCKS OUT THE MOST HARMFUL RAYS THAT CAUSE UV SKIN CANCER AND PROTECTS THE VEHICLE FROM FADING, CRACKING, DETERIORATING.",
+      "REDUCES DANGEROUS GLARES SUCH AS THE SUN, AND HEAD LIGHTS FROM OTHER CARS ON THE ROADS.",
+      "CERAMIC FILM CAN ALSO DECREASE THE INSIDE VEHICLE TEMPERATURE UP TO 90% ON THE SUMMER HOT DAYS THAT CAN BE UNCOMFORTABLE.",
+      "THE DARKER THE SHADE THE MORE HEAT REJECTION YOU WILL GET.",
+      "HERE AT TINT PROS TAMPA FLORIDA WE USE THE BEST CERAMIC FILMS ON THE MARKET TODAY TO GIVE YOU THEB BEST COMTABILITY IN YOUR CAR, HOME OR OFFICE. OUR COMPUTER CUT TECHNOLOGY FOR CUTTING FILM IS A SPECIAL ORDER . THE REASON IS WE WON'T CUT THE FILM ON VEHICLES OR PAINT WITH A KNIFE LIKE OTHER SHOPS DO. THE COMPUTER CUT COST EXTRA AND IS SPECIAL ORDER PRIOR TO BOOKING SERVICE.",
+      "WE USE COMPUTER CUT SYSTEM FOR WINDOW TINT, PAINT PROTECTION FILM, AND DIGITAL VINYL WRAPS ON BOATS, CARS, TRUCKS, COMMERCIAL VANS, AND BOX TRUCKS FOR ADVERTISEMENTS.ET."
+    ],
+    "florida_tint_law_mentions": {
+      "status": "not_found_on_site",
+      "copy": null,
+      "note": "The site does not publish VLT percentages, AS-1 rules, exemptions, or a legal disclaimer. Do not generate legal guidance from this context alone."
+    },
+    "warranty_and_guarantee_terms": {
+      "claims": [
+        "LIFETIME WARFRANTY.",
+        "Warranty= lifetime Warranty on our auto films and residential films.",
+        "We offer lifetime warranty on are films."
+      ],
+      "manufacturer_backing": null,
+      "terms_and_exclusions": null,
+      "note": "The site makes a lifetime-warranty claim but does not publish written terms, exclusions, transferability, or a named manufacturer backing."
+    }
+  },
+  "services_breakdown": [
+    {
+      "service_title": "AUTO WINDOW TINTING",
+      "full_description": "We offer mobile auto window tinting installing the best film in Tampa Bay area for the last 22 years. Ask about our ceramic films.",
+      "film_brands_and_technologies": ["ceramic films", "Computer Cut Technology"],
+      "packages_or_starting_prices": null
+    },
+    {
+      "service_title": "RESIDENTIAL WINDOW TINTING",
+      "full_description": "Window tinting your home saves you money on your electric bill, keeping the home cooler and creating privacy.",
+      "film_brands_and_technologies": ["advanced NANO ceramic window films"],
+      "packages_or_starting_prices": null
+    },
+    {
+      "service_title": "COMMERCIAL WINDOW TINTING",
+      "full_description": "Tint Pro's Tampa offers the best and most reliable flat glass window film such as different shades, heat rejection, blackout film, white frost, and decorative films.",
+      "film_brands_and_technologies": ["flat glass window film", "heat rejection", "blackout film", "white frost", "decorative films"],
+      "packages_or_starting_prices": null
+    },
+    {
+      "service_title": "PPF FILM",
+      "full_description": "Tint Pro's offers a paint protection film that protects the vehicles paint from every day rocks, road debris, chips, scratches and insects that can leave marks in the paint.",
+      "film_brands_and_technologies": ["paint protection film", "clear polyurethane film"],
+      "packages_or_starting_prices": null
+    },
+    {
+      "service_title": "VINYL CAR WRAPS / COLOR CHANGE",
+      "full_description": "Tint Pros of Tampa Bay specializes in vinyl car wrap designs advertisements on vehicles with optional colors changes and variations for private or commercial business advertisement purposes. LEARN MORE! Call us NOW at (813) 787 5327.",
+      "film_brands_and_technologies": ["digital vinyl wraps", "Computer Cut System"],
+      "packages_or_starting_prices": null
+    },
+    {
+      "service_title": "MARINE / BOAT FILM APPLICATION",
+      "full_description": null,
+      "film_brands_and_technologies": ["Computer Cut System mentioned for boats"],
+      "packages_or_starting_prices": null,
+      "note": "Marine is listed in the hero service categories and boats are mentioned in the computer-cut paragraph, but no standalone marine service description or price is published."
+    }
+  ],
+  "assets_and_media_repository": {
+    "asset_host": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/",
+    "hero_banner_images": [
+      "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/20180713_161059_HDR_2.jpg",
+      "https://img1.wsimg.com/isteam/stock/12799/"
+    ],
+    "service_and_portfolio_images": [
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/45a7ea47d4acd39e890b4cc8815edd41.png", "alt": "A vehicle that was tinted at 15% ceramic."},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/6449107f8313b86d34b0bf4e03d7ef94.png", "alt": "Showing a picture of a house that we installed window tint."},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/ffbe6a7b1bf1eaca6aaa736e1b821e57.png", "alt": "A building showing reflective window film for blocking out heat and giving privacy."},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/4c9dae728449aab89ba74cf655cd584f.png", "alt": "installing ppf film"},
+      {"url": "https://img1.wsimg.com/isteam/stock/107919/", "alt": "Building showing a mirror window film"},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/3.png", "alt": "installer installing window tint."},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/TINT-PROS-PPF-INSTALLATION.jpg", "alt": "Installing Paint protection film."},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/c97aabb987b9530b7e87ec1d7ccba713.png", "alt": "color change wrap"},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/TINT%20PROS%20CERAMIC.jpg", "alt": "Nano ceramic window tint feature image"},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/TINT-PROS-TAMPA-COMPUTER-CUT.png", "alt": "Showing customers that we offer computer cutting for auto window tint patterns."},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/lifetime.png", "alt": "We offer lifetime warranty on are films."},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/house%20tinted.png", "alt": "House tinting image"},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/me.png", "alt": "Mobile service image"},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/tint-pros-service-area.jpg", "alt": "zip codes that we service auto window tinting, home window tinting, and commercial window tinting."},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/tint-pros-tampa-CALL-TODAY.png", "alt": "FAST SERVICE NUMBER"}
+    ],
+    "commercial_gallery_images": [
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/88b1fbc7306938163683e2a898958cf8.jpg", "alt": "A company Tint Pros installed window tint for."},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/8671eba4133ea7bb2e4c7ce06ebea8e8.jpg", "alt": "A company Tint Pros installed business commercial window tint for."},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/679fb337f33d2b119c4f9221076b9cd3.png", "alt": "Tint Pros installed window film for this company."},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/644abf68798c6cc0c815a9cf1858a6e1.jpg", "alt": "Tint Pros tinted for the Volvo dealership."},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/d01ff588d5962ecbe7536e75514baebb.jpg", "alt": "Tint pros installed window tint for this company"},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/b7bf95a64b8d05f907d366bd18aed517.jpg", "alt": "a company we serviced window tinting for."},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/631548b0c3e30050c768293034850ca4.jpg", "alt": "A known company we installed commercial window tint for."},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/eda65c933d10d1403ab02e7c6bdada1c.jpg", "alt": "Company we serviced and window tinted there vehicles."},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/7279a66835f2f89ea99b6ae6507c11a3.jpg", "alt": "We window tinted this companies building"},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/41beeeabd6e334114837e1a745776ebf.jpg", "alt": "We tinted this companies fleets of commercial trucks."},
+      {"url": "https://img1.wsimg.com/isteam/ip/4e2960b6-001d-4047-acb0-f82b570eb779/b5dfe9bcf036c9517023eba5dd17b61d.jpg", "alt": "We tinted this companies building."}
+    ],
+    "partner_or_certification_badges": [],
+    "note": "The page contains a Trusted Partners heading but no partner/certification logo assets were identifiable in the exposed page data. The site text says 'we are certified' in the PPF section without naming the certification."
+  },
+  "social_proof_and_testimonials": {
+    "site_claims": [
+      "500+ HAPPY REVIEWS",
+      "Why customers and dealerships use Tint Pro's of Tampa?"
+    ],
+    "aggregate_rating": null,
+    "named_reviews": [],
+    "review_section_status": "The site exposes a Reviews heading but no reviewer names, star ratings, or review text in the publicly crawled page HTML.",
+    "third_party_context_not_part_of_site_copy": [
+      {"source": "https://tintscout.com/fl/tampa/tint-pros-tampa-mobile-window-tinting-commercial-residential-and-auto-tampa/", "claim": "The directory reported 4.9 stars from 510 Google reviews when crawled; this conflicts with the site's '500+ HAPPY REVIEWS' wording and is not treated as an official on-site rating."},
+      {"source": "https://tintfinder.com/places/florida/tampa/tint-pros-tampa/", "claim": "The directory reported 4.8 from 47 Google reviews when crawled; directory counts conflict, so verify against the current Google Business Profile before publishing."}
+    ]
+  },
+  "faqs": {
+    "status": "not_found_on_site",
+    "items": [],
+    "note": "No FAQ question-and-answer pairs were exposed on the public page."
+  },
+  "vehicle_makes_listed": ["Acura", "Alfa Romero", "Aston Martin", "Audi", "Bentley", "BMW", "Bugatti", "Buick", "Cadillac", "Chevy", "Chrysler", "Dodge", "Ferrari", "Fiat", "Ford", "GMC", "Honda", "Hummer", "Hyundai", "Jaguar", "Jeep", "Lamborghini", "Land Rover", "Lexus", "Lincoln", "Maserati", "Mazda", "Mercedes", "Mitsubishi", "Nissan", "Oldsmobile", "Plymouth", "Pontiac", "Porsche", "Ram", "Rolls-Royce", "Saab", "Saturn", "Scion", "Suzuki", "Tesla", "Toyota", "Volkswagen", "Volvo"],
+  "contact_form_fields": ["Name*", "Email*", "subject", "Phone*", "Address (Street, City, Zip Code)*", "Date and time of appointment"],
+  "contact_copy": {
+    "section_heading": "Get a Free Quote",
+    "schedule_heading": "Schedule an Appointment",
+    "body": "To set up a window tinting service consultation, please contact us or text us at 813-787-5327 at your convenience. We look forward to hearing from you and meeting you soon.",
+    "submit_button": "Send"
+  },
+  "implementation_warnings": [
+    "Do not claim a street address as official: the site only publishes Tampa, Florida 33624, United States and describes itself as mobile.",
+    "Do not publish Florida tint-law percentages from this context: none are present on the target site.",
+    "Do not invent film brands such as XPEL, SunTek, 3M, Rayno, Llumar, or ComputerCut. The site only names ceramic films, advanced NANO ceramic window films, and computer-cut technology.",
+    "The lifetime warranty claim has no public terms or exclusions; use it as a marketing claim, not as a complete warranty policy.",
+    "The page contains visible spelling/capitalization errors such as 'WARFRANTY', 'yeaars', 'THEB BEST COMTABILITY', and 'are films'. Preserve them only for verbatim content; proofread any new production copy separately."
+  ]
+}
