@@ -29,7 +29,7 @@ function Home() {
   }, [quoteOpen]);
 
   return (
-    <div className="site-noise min-h-[100dvh] overflow-hidden">
+    <div className="site-noise min-h-[100dvh] overflow-x-clip">
       <main>
         <Hero />
         <Ticker />

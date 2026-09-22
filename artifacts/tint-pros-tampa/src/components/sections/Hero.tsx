@@ -16,7 +16,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,6,12,.98)_0%,rgba(2,6,12,.82)_42%,rgba(2,6,12,.18)_100%)]" />
       <div className="hero-grid absolute inset-0 opacity-20" />
       <Header />
-      <div className="relative mx-auto flex min-h-[760px] max-w-7xl items-end px-5 pb-20 pt-36 sm:min-h-[820px] sm:px-8 sm:pb-24 lg:px-10">
+      <div className="relative mx-auto flex min-h-[760px] max-w-7xl items-end px-5 pb-48 pt-36 sm:min-h-[820px] sm:px-8 sm:pb-24 lg:px-10">
         <div className="max-w-3xl">
           <div className="reveal-up mb-6 flex items-center gap-3 text-sm font-semibold tracking-[.12em] text-cyan-300">
             <span className="h-px w-10 bg-cyan-300" />
@@ -36,7 +36,7 @@ export function Hero() {
               <Phone size={17} /> Call {PHONE}
             </a>
           </div>
-          <div className="reveal-up delay-3 mt-9 flex flex-wrap gap-x-6 gap-y-3 text-sm font-medium text-white/75">
+          <div className="reveal-up delay-3 relative z-30 mt-9 flex flex-wrap gap-x-6 gap-y-3 text-sm font-medium text-white/75">
             {proofPoints.map((point) => (
               <span key={point} className="inline-flex items-center gap-2">
                 <CheckCircle2 size={15} className="text-cyan-300" /> {point}
@@ -45,7 +45,7 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 z-20 border-t border-white/15 bg-slate-950/80 backdrop-blur-md before:pointer-events-none before:absolute before:inset-x-0 before:-top-32 before:h-32 before:bg-gradient-to-t before:from-slate-950/90 before:to-transparent before:content-[''] sm:before:hidden">
+      <div className="absolute bottom-0 left-0 right-0 z-20 border-t border-white/15 bg-slate-950/80 backdrop-blur-md before:pointer-events-none before:absolute before:inset-x-0 before:-top-10 before:h-10 before:bg-gradient-to-t before:from-slate-950/90 before:to-transparent before:content-[''] sm:before:hidden">
         <div className="mx-auto grid max-w-7xl gap-5 px-5 py-5 text-sm text-white/70 sm:grid-cols-2 sm:px-8 lg:grid-cols-4 lg:px-10">
           <span className="inline-flex items-center gap-3"><ShieldCheck size={18} className="text-cyan-300" /> Lifetime transferable warranty</span>
           <span className="inline-flex items-center gap-3"><CheckCircle2 size={18} className="text-cyan-300" /> 500+ five-star reviews</span>

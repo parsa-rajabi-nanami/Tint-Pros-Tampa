@@ -71,8 +71,26 @@ export function TintSimulator() {
         <div className="col-span-2 sm:col-span-1"><p className="font-display text-xl text-white">{selectedCompliance.front}</p><p className="mt-1 text-xs text-white/50">front side glass</p></div>
       </div>
       <div className="mt-5 flex items-start gap-2 text-xs leading-relaxed text-white/50"><ShieldCheck size={15} className="mt-0.5 shrink-0 text-cyan-300" /><span>{selectedCompliance.rear} for rear glass. Florida compliance depends on measured glass, vehicle class, and existing factory tint.</span></div>
-      <a href="sms:8137875327" className="focus-ring mt-6 inline-flex min-h-11 items-center gap-2 rounded-full bg-amber-300 px-5 py-3 text-sm font-bold text-slate-950 transition-transform hover:-translate-y-0.5" data-testid="link-simulator-text">Book this shade via text <ArrowRight size={16} /></a>
-      <p className="mt-4 inline-flex items-center gap-2 text-xs text-white/45"><CheckCircle2 size={14} className="text-cyan-300" /> Performance values are illustrative by film family.</p>
+      <div className="mt-6 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-6">
+        <a
+          href="sms:8137875327"
+          className="focus-ring inline-flex min-h-11 items-center gap-2 rounded-full bg-amber-300 px-5 py-3 text-sm font-bold text-slate-950 transition-transform hover:-translate-y-0.5"
+          data-testid="link-simulator-text"
+        >
+          Book this shade via text
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right" aria-hidden="true">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
+        <p className="inline-flex items-center gap-2 text-xs text-white/45">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-check text-cyan-300" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <path d="m9 12 2 2 4-4" />
+          </svg>
+          Performance values are illustrative by film family.
+        </p>
+      </div>
     </div>
   );
 }
