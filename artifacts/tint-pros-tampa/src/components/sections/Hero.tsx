@@ -11,7 +11,7 @@ const proofPoints = [
 
 export function Hero() {
   return (
-    <section id="top" className="relative min-h-[760px] overflow-hidden bg-slate-950 text-white sm:min-h-[820px]">
+    <section id="top" className="relative isolate min-h-[760px] overflow-hidden bg-slate-950 text-white sm:min-h-[820px]">
       <div className="absolute inset-0 bg-cover bg-[center_45%] opacity-70" style={{ backgroundImage: `url("${publicAsset('/assets/hero.jpg')}")` }} aria-hidden="true" />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,6,12,.98)_0%,rgba(2,6,12,.82)_42%,rgba(2,6,12,.18)_100%)]" />
       <div className="hero-grid absolute inset-0 opacity-20" />
@@ -45,7 +45,7 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 border-t border-white/15 bg-slate-950/80 backdrop-blur-md">
+      <div className="absolute bottom-0 left-0 right-0 z-20 border-t border-white/15 bg-slate-950/80 backdrop-blur-md before:pointer-events-none before:absolute before:inset-x-0 before:-top-32 before:h-32 before:bg-gradient-to-t before:from-slate-950/90 before:to-transparent before:content-[''] sm:before:hidden">
         <div className="mx-auto grid max-w-7xl gap-5 px-5 py-5 text-sm text-white/70 sm:grid-cols-2 sm:px-8 lg:grid-cols-4 lg:px-10">
           <span className="inline-flex items-center gap-3"><ShieldCheck size={18} className="text-cyan-300" /> Lifetime transferable warranty</span>
           <span className="inline-flex items-center gap-3"><CheckCircle2 size={18} className="text-cyan-300" /> 500+ five-star reviews</span>
