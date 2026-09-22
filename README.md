@@ -4,6 +4,10 @@ Tint Pros Tampa is a production-oriented redesign for a mobile window-tinting an
 
 The current implementation is a frontend-only experience. Quote requests are validated in the browser and end in a confirmation state; they are not sent to a CRM or email provider until a backend or form provider is connected.
 
+## Ownership
+
+Created and maintained by **Parsa Rajabi**. This project is released under the MIT License; see [LICENSE](LICENSE) for the full terms.
+
 ## Product surface
 
 - Mobile-first landing page for auto, residential, commercial, marine, PPF, and vinyl-wrap services.
@@ -21,7 +25,7 @@ The current implementation is a frontend-only experience. Quote requests are val
 | Styling | Tailwind CSS 4, CSS variables, and `tw-animate-css` |
 | Icons | Lucide React |
 | Package management | pnpm workspace with a shared catalog |
-| Deployment | Vercel or Cloudflare Pages using the generated `dist/public` output |
+| Deployment | Vercel, Cloudflare Pages, or GitHub Pages via `gh-pages` |
 
 React 18-compatible component patterns are used where practical, but the workspace is pinned to React 19.1.0.
 
@@ -63,20 +67,28 @@ The `@/*` alias is defined identically in `vite.config.ts` and the package `tsco
 This repository uses pnpm workspaces and the root `preinstall` guard intentionally rejects npm and Yarn installs. Use Corepack or an installed pnpm version:
 
 ```bash
-corepack pnpm install
-corepack pnpm --filter @workspace/tint-pros-tampa dev
+corepack pnpm install --frozen-lockfile
+corepack pnpm dev
 ```
 
 Useful commands from the repository root:
 
 ```bash
-corepack pnpm --filter @workspace/tint-pros-tampa typecheck
-corepack pnpm --filter @workspace/tint-pros-tampa build
+corepack pnpm typecheck:site
+corepack pnpm build:site
+corepack pnpm preview:site
 corepack pnpm run typecheck
 corepack pnpm run build
 ```
 
-The app package also exposes `dev`, `typecheck`, `build`, and `serve` scripts. No external API or environment variable is required for the current static experience.
+The root scripts target the public site package, so you do not need to change directory into `artifacts/tint-pros-tampa`. The development server is available at `http://localhost:5173`; the Vite preview server uses `http://localhost:4173` after a build. No external API or environment variable is required for the current static experience.
+
+If Corepack fails in WSL because of its local runtime/cache setup, use the pinned pnpm release through npm for the current shell:
+
+```bash
+NPM_CONFIG_CACHE=/tmp/tint-pros-npm-cache npm exec --yes --package=pnpm@11.27.1 -- pnpm --config.store-dir=/tmp/tint-pros-pnpm-store install --frozen-lockfile
+NPM_CONFIG_CACHE=/tmp/tint-pros-npm-cache npm exec --yes --package=pnpm@11.27.1 -- pnpm --config.store-dir=/tmp/tint-pros-pnpm-store dev
+```
 
 ## Deployment
 
@@ -88,9 +100,25 @@ The root `vercel.json` already defines the workspace build command, `artifacts/t
 
 Use the repository root as the build directory, `corepack pnpm install --frozen-lockfile` as the install command, `corepack pnpm --filter @workspace/tint-pros-tampa build` as the build command, and `artifacts/tint-pros-tampa/dist/public` as the output directory. Configure the Pages SPA fallback to serve `/index.html` for application routes. The static asset cache policy should be applied to `/assets/*`.
 
+### GitHub Pages
+
+This repository is configured for the project page at `https://parsa-rajabi-nanami.github.io/Tint-Pros-Tampa/`. The `build:pages` script sets Vite's base path to `/Tint-Pros-Tampa/`, rewrites public assets through that base path, and generates the deployable output in `artifacts/tint-pros-tampa/dist/public`.
+
+Run the following from the repository root:
+
+```bash
+corepack pnpm install --frozen-lockfile
+corepack pnpm deploy:pages
+```
+
+The `deploy:pages` script builds the site and uses `gh-pages` to publish that folder to the `gh-pages` branch. In the GitHub repository, open **Settings → Pages**, choose **Deploy from a branch**, select `gh-pages`, and select the `/ (root)` folder. GitHub will then serve the URL above.
+
+If the repository name changes, update the `--base=/Tint-Pros-Tampa/` value in `artifacts/tint-pros-tampa/package.json` before deploying. For a custom domain or a user/org page, use `/` instead.
+
 ## Release checklist
 
 1. Run the root typecheck and build.
 2. Review the generated `artifacts/tint-pros-tampa/dist/public` output and confirm all images load.
-3. Connect the quote form to an approved backend before treating submissions as production leads.
-4. Have the business owner verify estimator ranges, warranty language, and the current Florida tint requirements before publishing those claims as commercial policy.
+3. For GitHub Pages, run `corepack pnpm build:pages` and inspect the generated HTML for `/Tint-Pros-Tampa/` asset paths before running `deploy:pages`.
+4. Connect the quote form to an approved backend before treating submissions as production leads.
+5. Have the business owner verify estimator ranges, warranty language, and the current Florida tint requirements before publishing those claims as commercial policy.

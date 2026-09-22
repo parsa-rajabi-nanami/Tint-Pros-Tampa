@@ -1,5 +1,6 @@
 import { CalendarClock } from 'lucide-react';
 import { SectionLabel } from '@/components/common/SectionLabel';
+import { publicAsset } from '@/lib/assets';
 
 const steps = [
   ['01', 'Tell us what needs a cooler, cleaner, or tougher finish.'],
@@ -20,7 +21,7 @@ export function MobileProcess() {
         </div>
         <div className="order-1 relative lg:order-2">
           <div className="absolute -right-2 -top-4 hidden h-32 w-32 border-r-2 border-t-2 border-[#d22f25] sm:block" />
-          <img src="/assets/mobile-service.png" alt="Tint Pros installer applying window film inside a vehicle" width="998" height="642" loading="lazy" className="relative z-10 h-auto w-full object-cover grayscale-[15%]" />
+          <img src={publicAsset('/assets/mobile-service.png')} alt="Tint Pros installer applying window film inside a vehicle" width="998" height="642" loading="lazy" className="relative z-10 h-auto w-full object-cover grayscale-[15%]" />
           <div className="absolute -bottom-4 -left-4 z-20 bg-[#d22f25] px-5 py-4 text-white sm:-left-6"><p className="font-display text-xl">WE COME TO YOU</p><p className="mt-1 text-[.65rem] font-bold uppercase tracking-[.16em] text-white/75">Tampa Bay area</p></div>
         </div>
       </div>

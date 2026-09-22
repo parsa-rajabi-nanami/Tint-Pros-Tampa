@@ -2,13 +2,13 @@
   "name": "Tint Pros Tampa",
   "short_name": "Tint Pros",
   "description": "Mobile window tinting, PPF, and vinyl wraps across Tampa Bay.",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#090D14",
   "theme_color": "#090D14",
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"

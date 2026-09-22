@@ -1,5 +1,6 @@
 import { ArrowRight, Check } from 'lucide-react';
 import { SectionLabel } from '@/components/common/SectionLabel';
+import { publicAsset } from '@/lib/assets';
 
 const benefits = [
   ['Less heat', 'Ceramic film can decrease the inside vehicle temperature on hot summer days.'],
@@ -13,7 +14,7 @@ export function CeramicFeature() {
     <section id="why" className="bg-[#111] px-5 py-20 text-white sm:px-8 sm:py-28 lg:px-12">
       <div className="mx-auto grid max-w-[1440px] gap-12 lg:grid-cols-[1.05fr_.95fr] lg:items-center lg:gap-20">
         <div className="relative overflow-hidden">
-          <img src="/assets/ceramic.jpg" alt="Vehicle interior showing a range of window tint shades" width="1035" height="408" loading="lazy" className="h-auto w-full object-cover" />
+          <img src={publicAsset('/assets/ceramic.jpg')} alt="Vehicle interior showing a range of window tint shades" width="1035" height="408" loading="lazy" className="h-auto w-full object-cover" />
           <div className="absolute bottom-0 left-0 bg-[#f5d644] px-5 py-4 text-[#111]"><p className="font-display text-2xl leading-none">NANO CERAMIC</p><p className="mt-1 text-xs font-bold uppercase tracking-[.12em]">The comfort upgrade</p></div>
         </div>
         <div>

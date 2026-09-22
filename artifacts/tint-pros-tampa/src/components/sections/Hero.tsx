@@ -1,11 +1,12 @@
 import { ArrowRight, Check, Phone, Zap } from 'lucide-react';
 import { Header } from '@/components/common/Header';
 import { PHONE, TEL } from '@/data/site';
+import { publicAsset } from '@/lib/assets';
 
 export function Hero() {
   return (
     <section id="top" className="relative min-h-[710px] overflow-hidden bg-[#111] text-white sm:min-h-[760px]">
-      <div className="absolute inset-0 bg-[url('/assets/hero.jpg')] bg-cover bg-[center_60%] opacity-75" aria-hidden="true" />
+      <div className="absolute inset-0 bg-cover bg-[center_60%] opacity-75" style={{ backgroundImage: `url("${publicAsset('/assets/hero.jpg')}")` }} aria-hidden="true" />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,8,8,.96)_0%,rgba(8,8,8,.75)_39%,rgba(8,8,8,.15)_100%)]" />
       <div className="hero-grid absolute inset-0 opacity-30" />
       <Header />

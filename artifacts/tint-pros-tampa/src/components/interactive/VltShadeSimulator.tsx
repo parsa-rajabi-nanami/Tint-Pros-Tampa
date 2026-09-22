@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ArrowRight, ShieldCheck } from 'lucide-react';
 import { vltOptions } from '@/data/site';
 import { findVltOption } from '@/lib/calculations';
+import { publicAsset } from '@/lib/assets';
 
 export function VltShadeSimulator() {
   const [vlt, setVlt] = useState(35);
@@ -14,7 +15,7 @@ export function VltShadeSimulator() {
         <span className="bg-[#d22f25] px-3 py-2 font-display text-2xl text-white">{selected.value}%</span>
       </div>
       <div className="mt-8 overflow-hidden border border-white/15 bg-[#0b0b0b]">
-        <div className="relative h-40 bg-[url('/assets/auto-tint.png')] bg-cover bg-center">
+        <div className="relative h-40 bg-cover bg-center" style={{ backgroundImage: `url("${publicAsset('/assets/auto-tint.png')}")` }}>
           <div className="absolute inset-0 bg-[#050505]" style={{ opacity: Math.max(0.12, (100 - selected.value) / 100) }} aria-hidden="true" />
           <div className="absolute bottom-0 left-0 bg-[#f5d644] px-3 py-2 text-xs font-bold uppercase tracking-[.12em] text-[#111]">{selected.label} look</div>
         </div>
