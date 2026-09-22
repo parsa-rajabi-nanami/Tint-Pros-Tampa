@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { ArrowRight, ShieldCheck } from 'lucide-react';
-import { SectionLabel } from '@/components/common/SectionLabel';
 import { vltOptions } from '@/data/site';
 import { findVltOption } from '@/lib/calculations';
 

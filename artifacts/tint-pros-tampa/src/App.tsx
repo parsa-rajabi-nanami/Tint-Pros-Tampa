@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { ErrorBoundary } from '@/components/common/ErrorBoundary';
 import { Footer } from '@/components/common/Footer';
 import { CeramicFeature } from '@/components/sections/CeramicFeature';
 import { FloridaTintGuide } from '@/components/sections/FloridaTintGuide';
@@ -39,6 +38,6 @@ function Home() {
   );
 }
 
-export default function App() {
+export function App() {
   return <Home />;
 }

@@ -1,4 +1,4 @@
-import { ArrowRight, ArrowUpRight, Check, Phone, Zap } from 'lucide-react';
+import { ArrowRight, Check, Phone, Zap } from 'lucide-react';
 import { Header } from '@/components/common/Header';
 import { PHONE, TEL } from '@/data/site';
 

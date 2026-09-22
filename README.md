@@ -27,7 +27,7 @@ React 18-compatible component patterns are used where practical, but the workspa
 
 ## Architecture
 
-The application lives in `artifacts/tint-pros-tampa` because the repository is a pnpm workspace with additional API, database, scripts, and mockup packages. The website package itself follows a conventional Vite + React structure:
+The application lives in `artifacts/tint-pros-tampa` because the repository is a pnpm workspace with additional API, database, and mockup packages. The website package itself follows a conventional Vite + React structure:
 
 ```text
 artifacts/tint-pros-tampa/
