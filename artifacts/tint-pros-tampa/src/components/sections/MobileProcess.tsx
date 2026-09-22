@@ -21,7 +21,7 @@ export function MobileProcess() {
         </div>
         <div className="relative">
           <div className="absolute -right-2 -top-4 hidden h-32 w-32 border-r-2 border-t-2 border-cyan-300 sm:block" />
-          <img src={publicAsset('/assets/mobile-service.png')} alt="Tint Pros installer applying window film inside a vehicle" width="998" height="642" loading="lazy" className="relative z-10 h-auto w-full border border-white/10 object-cover" />
+          <img src={publicAsset('/assets/mobile-service.jpg')} alt="Tint Pros installer applying window film inside a vehicle" width="998" height="642" loading="lazy" className="relative z-10 h-auto w-full border border-white/10 object-cover" />
           <div className="absolute -bottom-4 -left-4 z-20 border border-cyan-300/50 bg-slate-950 px-5 py-4 sm:-left-6"><p className="font-display text-xl text-cyan-300">We come to you</p><p className="mt-1 text-sm text-white/60">Tampa Bay area</p></div>
         </div>
       </div>

@@ -29,7 +29,7 @@ export function TintSimulator() {
       <div className="mt-8 overflow-hidden border border-white/10 bg-slate-950 p-4">
         <div className="relative isolate h-52 overflow-hidden rounded-sm bg-slate-950 sm:h-72">
           <img
-            src={publicAsset('/assets/ceramic.jpg')}
+            src={publicAsset('/assets/street-view.jpg')}
             alt={`Highway scene through a ${selected.value}% VLT tint preview`}
             width="1035"
             height="408"
