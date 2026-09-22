@@ -12,8 +12,8 @@ const benefits = [
 export function CeramicFeature() {
   return (
     <section id="why" className="bg-slate-950 px-5 py-20 text-white sm:px-8 sm:py-28 lg:px-10">
-      <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_.95fr] lg:items-center lg:gap-20">
-        <div className="relative overflow-hidden border border-white/10 bg-slate-900">
+      <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_.95fr] lg:items-start lg:gap-20">
+        <div className="relative overflow-hidden border border-white/10 bg-slate-900 lg:sticky lg:top-8 lg:self-start">
           <img src={publicAsset('/assets/ceramic.jpg')} alt="Vehicle interior showing a range of window tint shades" width="1035" height="408" loading="lazy" className="h-auto w-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
           <div className="absolute bottom-0 left-0 p-6"><p className="font-display text-3xl leading-none text-cyan-300">Nano ceramic</p><p className="mt-2 text-sm text-white/70">The comfort upgrade for Florida roads</p></div>

@@ -1,6 +1,7 @@
-import { ArrowRight, CheckCircle2, ShieldCheck } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Eye, ShieldCheck } from 'lucide-react';
 import { useState } from 'react';
 import { vltOptions } from '@/data/site';
+import { publicAsset } from '@/lib/assets';
 
 const vltOrder = [70, 50, 35, 20, 15, 5];
 
@@ -17,6 +18,7 @@ export function TintSimulator() {
   const [vlt, setVlt] = useState(35);
   const selected = vltOptions.find((option) => option.value === vlt) ?? vltOptions[2];
   const selectedCompliance = compliance[vlt];
+  const overlayOpacity = Math.min(0.62, 0.08 + ((70 - vlt) / 65) * 0.54);
 
   return (
     <div className="border border-white/10 bg-slate-900 p-5 sm:p-8" data-testid="tint-simulator">
@@ -25,20 +27,36 @@ export function TintSimulator() {
         <span className="rounded-full bg-cyan-300 px-4 py-2 font-display text-2xl text-slate-950">{selected.value}%</span>
       </div>
       <div className="mt-8 overflow-hidden border border-white/10 bg-slate-950 p-4">
-        <div className="relative flex h-44 items-center justify-center overflow-hidden rounded-sm bg-[radial-gradient(circle_at_50%_20%,rgba(103,232,249,.18),transparent_45%),linear-gradient(160deg,#1e293b,#020617)]">
-          <div className="absolute bottom-3 left-1/2 h-2 w-4/5 -translate-x-1/2 rounded-full bg-cyan-300/20 blur-md" />
-          <svg viewBox="0 0 560 220" className="relative z-10 h-full w-full max-w-xl" role="img" aria-label={`${selected.value}% visible light transmission tint preview`}>
-            <path d="M77 155c8-24 25-39 51-47l38-12 43-44c9-9 20-14 33-14h114c18 0 34 7 46 21l32 37 51 11c25 6 39 21 43 48l4 19H72l5-19Z" fill="#0b1220" stroke="#67e8f9" strokeOpacity=".45" strokeWidth="2" />
-            <path d="M220 49h118c13 0 25 5 34 16l24 29H190l28-31c1-2 1-3 2-4Z" fill="#cbd5e1" fillOpacity=".12" stroke="#e2e8f0" strokeOpacity=".35" />
-            <path d="M224 53h47v36h-74l27-30Z" fill="#06111e" fillOpacity={Math.max(.2, 1 - selected.value / 100)} />
-            <path d="M276 53h58c12 0 22 5 31 15l17 21h-106V53Z" fill="#06111e" fillOpacity={Math.max(.2, 1 - selected.value / 100)} />
-            <path d="M113 128h68v30h-83c2-11 7-21 15-30Z" fill="#06111e" fillOpacity={Math.max(.2, 1 - selected.value / 100)} stroke="#67e8f9" strokeOpacity=".25" />
-            <path d="M366 128h80c8 8 12 18 14 30h-94v-30Z" fill="#06111e" fillOpacity={Math.max(.2, 1 - selected.value / 100)} stroke="#67e8f9" strokeOpacity=".25" />
-            <circle cx="137" cy="174" r="19" fill="#020617" stroke="#94a3b8" strokeWidth="4" /><circle cx="425" cy="174" r="19" fill="#020617" stroke="#94a3b8" strokeWidth="4" />
-            <path d="M176 116h190" stroke="#67e8f9" strokeOpacity=".55" strokeWidth="2" />
-          </svg>
+        <div className="relative isolate h-52 overflow-hidden rounded-sm bg-slate-950 sm:h-72">
+          <img
+            src={publicAsset('/assets/ceramic.jpg')}
+            alt={`Highway scene through a ${selected.value}% VLT tint preview`}
+            width="1035"
+            height="408"
+            className="absolute inset-0 h-full w-full object-cover object-center transition-[filter] duration-300"
+            style={{ filter: `brightness(${1 - overlayOpacity * 0.16}) saturate(${1 - overlayOpacity * 0.1})` }}
+          />
+          <div
+            className="absolute inset-0 bg-slate-950 transition-opacity duration-300"
+            style={{ opacity: overlayOpacity }}
+            aria-hidden="true"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-slate-950/25" aria-hidden="true" />
+          <div className="absolute inset-x-4 top-4 flex items-center justify-between gap-3 text-[10px] font-bold tracking-[.14em]">
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-slate-950/75 px-3 py-1.5 text-white/85 backdrop-blur-sm">
+              <Eye size={13} className="text-cyan-300" /> LIVE VISUAL
+            </span>
+            <span className="rounded-full bg-cyan-300 px-3 py-1.5 text-slate-950">{selected.label} shade</span>
+          </div>
+          <div className="absolute inset-x-4 bottom-4 flex items-end justify-between gap-3 text-xs font-semibold text-white/75">
+            <span>More natural light</span>
+            <span>More privacy</span>
+          </div>
         </div>
-        <p className="mt-4 text-center text-sm font-semibold text-white/70">{selectedCompliance.tone}</p>
+        <div className="mt-4 flex items-center justify-between gap-3 text-sm">
+          <p className="font-semibold text-white/85">{selectedCompliance.tone}</p>
+          <p className="text-xs text-white/45">Illustrative view</p>
+        </div>
       </div>
       <div className="mt-7 grid grid-cols-3 gap-2" role="group" aria-label="Choose tint darkness">
         {vltOrder.map((value) => (
@@ -58,4 +76,3 @@ export function TintSimulator() {
     </div>
   );
 }
-
