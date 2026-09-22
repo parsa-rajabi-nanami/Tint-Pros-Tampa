@@ -4,30 +4,29 @@ import { serviceCards } from '@/data/site';
 
 export function Services() {
   return (
-    <section id="services" className="bg-[#f5f2eb] px-5 py-20 sm:px-8 sm:py-28 lg:px-12">
-      <div className="mx-auto max-w-[1440px]">
-        <div className="grid gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-end">
+    <section id="services" className="bg-slate-950 px-5 py-20 text-white sm:px-8 sm:py-28 lg:px-10">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid gap-10 lg:grid-cols-[.85fr_1.15fr] lg:items-end">
           <div>
-            <SectionLabel>What we do</SectionLabel>
-            <h2 className="max-w-lg font-display text-[clamp(2.8rem,6vw,5.8rem)] leading-[.88] tracking-[-.06em]">Built for Florida<br /><span className="text-[#d22f25]">living.</span></h2>
+            <SectionLabel light>Five ways to protect more</SectionLabel>
+            <h2 className="max-w-xl font-display text-[clamp(2.8rem,6vw,5.8rem)] leading-[.88] tracking-[-.06em]">One mobile team.<br /><span className="text-cyan-300">Every surface.</span></h2>
           </div>
-          <p className="max-w-xl text-lg leading-relaxed text-black/65 lg:justify-self-end">
-            From your daily driver to your storefront, Tint Pros brings practical protection and a cleaner finish to the places that take the most sun. Mobile service comes to you throughout Tampa Bay.
-          </p>
+          <p className="max-w-xl text-lg leading-relaxed text-white/60 lg:justify-self-end">From your daily driver to a design-forward office, we bring premium film and finish work to the places that get the most Florida sun.</p>
         </div>
-        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {serviceCards.map((service, index) => {
             const Icon = service.icon;
             return (
-              <article key={service.id} className={`service-card group overflow-hidden border border-black/10 bg-white ${index === 0 ? 'lg:translate-y-8' : index === 4 ? 'lg:-translate-y-4' : ''}`} data-testid={`card-service-${service.id}`}>
-                <div className="relative h-56 overflow-hidden bg-[#d6d1c7]">
-                  <img src={service.image} alt={service.alt} width="900" height="600" loading="lazy" className="h-full w-full object-cover" />
-                  <div className="absolute left-4 top-4 flex items-center gap-2 bg-[#111] px-3 py-2 text-[.64rem] font-bold uppercase tracking-[.14em] text-white"><Icon size={14} className="text-[#f5d644]" /> {service.kicker}</div>
+              <article key={service.id} className={`service-card group overflow-hidden border border-white/10 bg-slate-900 ${index === 0 ? 'lg:col-span-2' : ''}`} data-testid={`card-service-${service.id}`}>
+                <div className={`relative overflow-hidden bg-slate-800 ${index === 0 ? 'h-64' : 'h-52'}`}>
+                  <img src={service.image} alt={service.alt} width="900" height="600" loading="lazy" className="h-full w-full object-cover opacity-90 transition duration-500 group-hover:scale-105 group-hover:opacity-100" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-5 flex items-center gap-2 text-sm font-semibold text-white"><Icon size={17} className="text-cyan-300" /> {service.kicker}</div>
                 </div>
-                <div className="p-6">
-                  <h3 className="font-display text-xl leading-tight tracking-[-.03em]">{service.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-black/60">{service.copy}</p>
-                  <a href="#quote" className="focus-ring mt-6 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[.12em] text-[#d22f25] transition-colors group-hover:text-[#111]" data-testid={`link-service-quote-${service.id}`}>Request a quote <ArrowUpRight size={15} /></a>
+                <div className="flex min-h-52 flex-col p-6">
+                  <h3 className="font-display text-2xl leading-tight tracking-[-.03em]">{service.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-white/55">{service.copy}</p>
+                  <a href="#quote" className="focus-ring mt-auto inline-flex min-h-11 w-fit items-center gap-2 pt-6 text-sm font-bold text-cyan-300 transition-colors group-hover:text-white" data-testid={`link-service-quote-${service.id}`}>Get a project plan <ArrowUpRight size={15} /></a>
                 </div>
               </article>
             );

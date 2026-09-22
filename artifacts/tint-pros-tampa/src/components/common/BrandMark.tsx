@@ -10,10 +10,10 @@ export function BrandMark({ light = false }: BrandMarkProps) {
       data-testid="link-logo"
     >
       <span className="font-display text-[1.15rem] leading-none tracking-[-.05em]">
-        TINT PROS
+        Tint Pros
       </span>
-      <span className="mt-0.5 bg-[#d22f25] px-1.5 py-1 font-display text-[.55rem] leading-none tracking-[.12em] text-white">
-        TAMPA
+      <span className="mt-0.5 bg-cyan-300 px-1.5 py-1 font-display text-[.55rem] leading-none tracking-[.12em] text-slate-950">
+        Tampa
       </span>
     </a>
   );

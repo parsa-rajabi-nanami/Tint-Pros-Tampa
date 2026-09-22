@@ -5,8 +5,7 @@ export type ServiceId =
   | 'residential'
   | 'commercial'
   | 'ppf'
-  | 'wraps'
-  | 'marine';
+  | 'wraps';
 
 export interface ServiceCard {
   id: ServiceId;
@@ -23,20 +22,3 @@ export type VltOption = {
   label: string;
   heatRejection: number;
 };
-
-export type QuoteSize = 'small' | 'standard' | 'large';
-export type QuoteFinish = 'dyed' | 'ceramic' | 'premium';
-
-export interface QuoteEstimate {
-  low: number;
-  high: number;
-}
-
-export interface QuoteRequest {
-  name: string;
-  email: string;
-  subject: string;
-  phone: string;
-  address: string;
-  appointment: string;
-}

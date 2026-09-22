@@ -1,33 +1,41 @@
 import {
   Building2,
-  CarFront,
-  House,
   Scissors,
   ShieldCheck,
-  Waves,
+  Sparkles,
+  Sun,
 } from 'lucide-react';
 import { publicAsset } from '@/lib/assets';
-import type { ServiceCard, ServiceId, VltOption } from '@/types/site';
+import type { ServiceCard, VltOption } from '@/types/site';
 
 export const PHONE = '(813) 787-5327';
-export const TEL = 'tel:+18137875327';
-export const SMS = 'sms:+18137875327';
+export const TEL = 'tel:8137875327';
+export const SMS = 'sms:8137875327';
 
 export const serviceCards: ServiceCard[] = [
   {
     id: 'auto',
-    icon: CarFront,
-    title: 'Auto window tinting',
-    copy: 'We offer mobile auto window tinting installing the best film in Tampa Bay area for the last 22 years. Ask about our ceramic films.',
+    icon: Sparkles,
+    title: 'Auto nano-ceramic window tinting',
+    copy: 'Maximum heat reduction, glare control, and UV protection for daily drivers, Teslas, Porsches, BMWs, and everything in between.',
     image: publicAsset('/assets/auto-tint.png'),
     alt: 'Black sedan with dark ceramic window tint',
     kicker: 'Cooler commutes',
   },
   {
+    id: 'ppf',
+    icon: ShieldCheck,
+    title: 'Paint protection film (PPF / clear bra)',
+    copy: 'Self-healing rock-chip armor for the panels that take the most abuse, available in high-gloss or satin finishes.',
+    image: publicAsset('/assets/ppf.png'),
+    alt: 'Installer applying paint protection film to a vehicle',
+    kicker: 'Keep the finish',
+  },
+  {
     id: 'residential',
-    icon: House,
-    title: 'Residential window tinting',
-    copy: 'Window tinting your home saves you money on your electric bill, keeping the home cooler and creating privacy.',
+    icon: Sun,
+    title: 'Residential window film',
+    copy: 'Cut cooling costs, soften glare, and help protect floors, furniture, and artwork from Tampa sun without losing the view.',
     image: publicAsset('/assets/residential.png'),
     alt: 'Home with large tinted arched windows',
     kicker: 'Comfort at home',
@@ -35,38 +43,20 @@ export const serviceCards: ServiceCard[] = [
   {
     id: 'commercial',
     icon: Building2,
-    title: 'Commercial window tinting',
-    copy: "Tint Pro's Tampa offers the best and most reliable flat glass window film such as different shades, heat rejection, blackout film, white frost, and decorative films.",
+    title: 'Commercial and architectural tint',
+    copy: 'Solar control, frosted decorative glass, and security films for offices, storefronts, and architectural spaces.',
     image: publicAsset('/assets/commercial.png'),
     alt: 'Commercial building with reflective window film',
     kicker: 'Better workspaces',
   },
   {
-    id: 'ppf',
-    icon: ShieldCheck,
-    title: 'Paint protection film',
-    copy: "Tint Pro's offers a paint protection film that protects the vehicles paint from every day rocks, road debris, chips, scratches and insects that can leave marks in the paint.",
-    image: publicAsset('/assets/ppf.png'),
-    alt: 'Installer applying paint protection film to a vehicle',
-    kicker: 'Keep the finish',
-  },
-  {
     id: 'wraps',
     icon: Scissors,
-    title: 'Vinyl wraps / color change',
-    copy: 'Tint Pros of Tampa Bay specializes in vinyl car wrap designs, advertisements on vehicles, with optional color changes and variations for private or commercial business purposes.',
+    title: 'Vehicle wraps and fleet graphics',
+    copy: 'Color changes, commercial vans, box trucks, and boat or marine wraps with clean lines and a finish built to be seen.',
     image: publicAsset('/assets/wrap.png'),
     alt: 'Purple color-change vinyl wrap on a luxury sedan',
     kicker: 'Make it yours',
-  },
-  {
-    id: 'marine',
-    icon: Waves,
-    title: 'Marine / boat film application',
-    copy: 'Computer Cut System is available for boats, cars, trucks, commercial vans, and box trucks for advertisements.',
-    image: publicAsset('/assets/hero.jpg'),
-    alt: 'Tint Pros mobile service vehicle at a Tampa Bay home',
-    kicker: 'On the water',
   },
 ];
 
@@ -74,41 +64,30 @@ export const serviceAreas = [
   'Tampa',
   'Brandon',
   'Clearwater',
-  'Land O Lakes',
-  'Largo',
-  'Odessa',
-  'New Tampa',
-  'Oldsmar',
-  'Palm Harbor',
-  'Pinellas Park',
-  'St.Pete',
-  "Town'n'Country",
-  'Safety Harbor',
-  'Dunedin',
-  'Lutz',
-  'New Port Richey',
+  'St. Petersburg',
   'Riverview',
-  'Temple Terrace',
-  'Valrico',
-  'Tampa Palms',
+  'Lutz',
   'Wesley Chapel',
-  'Tarpon Springs',
+  "Land O' Lakes",
+  'Palm Harbor',
+  'Oldsmar',
+  'Valrico',
+];
+
+export const serviceZipCodes = [
+  '33601', '33602', '33603', '33604', '33605', '33606', '33607', '33609',
+  '33610', '33611', '33612', '33613', '33614', '33615', '33616', '33617',
+  '33618', '33619', '33620', '33621', '33622', '33624', '33625', '33626',
+  '33629', '33634', '33635', '33637', '33647', '33674', '33675', '33677',
+  '33679', '33680', '33681', '33682', '33684', '33685', '33686', '33687',
+  '33688', '33689', '33694',
 ];
 
 export const vltOptions: VltOption[] = [
-  { value: 5, label: 'Limo', heatRejection: 88 },
-  { value: 15, label: 'Dark', heatRejection: 82 },
-  { value: 20, label: 'Private', heatRejection: 78 },
-  { value: 35, label: 'Balanced', heatRejection: 68 },
-  { value: 50, label: 'Light', heatRejection: 56 },
-  { value: 70, label: 'Clear', heatRejection: 42 },
+  { value: 70, label: 'Clear', heatRejection: 50 },
+  { value: 50, label: 'Light', heatRejection: 58 },
+  { value: 35, label: 'Balanced', heatRejection: 70 },
+  { value: 20, label: 'Private', heatRejection: 80 },
+  { value: 15, label: 'Dark', heatRejection: 85 },
+  { value: 5, label: 'Limo', heatRejection: 90 },
 ];
-
-export const serviceLabels: Record<ServiceId, string> = {
-  auto: 'Auto tint',
-  residential: 'Home tint',
-  commercial: 'Commercial tint',
-  ppf: 'PPF',
-  wraps: 'Vinyl wrap',
-  marine: 'Marine film',
-};

@@ -1,13 +1,27 @@
+import { CheckCircle2, Clock3, ShieldCheck, Smartphone } from 'lucide-react';
 import { SectionLabel } from '@/components/common/SectionLabel';
+
+const proof = [
+  [Smartphone, '100% mobile service', 'We come to your home or office.'],
+  [CheckCircle2, '22+ years local', 'Tampa Bay experience you can call on.'],
+  [ShieldCheck, 'Lifetime warranty', 'Transferable coverage on qualifying films.'],
+  [Clock3, '500+ five-star reviews', 'A finish worth telling your friends about.'],
+] as const;
 
 export function ProofStrip() {
   return (
-    <section className="bg-[#f5d644] px-5 py-14 sm:px-8 lg:px-12">
-      <div className="mx-auto grid max-w-[1440px] gap-8 md:grid-cols-[1.3fr_1fr_1fr_1fr] md:items-center">
-        <div><SectionLabel>Why customers choose us</SectionLabel><h2 className="max-w-md font-display text-3xl leading-[.95] tracking-[-.04em] sm:text-4xl">Customer service and quality. No runaround.</h2></div>
-        <div className="border-t border-black/20 pt-4 md:border-l md:border-t-0 md:pl-6 md:pt-0"><p className="font-display text-4xl tracking-[-.06em]">22</p><p className="mt-1 text-xs font-bold uppercase tracking-[.11em]">years tinting cars</p></div>
-        <div className="border-t border-black/20 pt-4 md:border-l md:border-t-0 md:pl-6 md:pt-0"><p className="font-display text-4xl tracking-[-.06em]">500+</p><p className="mt-1 text-xs font-bold uppercase tracking-[.11em]">happy reviews</p></div>
-        <div className="border-t border-black/20 pt-4 md:border-l md:border-t-0 md:pl-6 md:pt-0"><p className="font-display text-4xl tracking-[-.06em]">FREE</p><p className="mt-1 text-xs font-bold uppercase tracking-[.11em]">service within Tampa Bay</p></div>
+    <section className="border-b border-white/10 bg-slate-900 px-5 py-12 text-white sm:px-8 lg:px-10">
+      <div className="mx-auto max-w-7xl">
+        <SectionLabel light>Why Tint Pros</SectionLabel>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {proof.map(([Icon, title, copy]) => (
+            <div key={title} className="border-t border-white/15 pt-5">
+              <Icon size={20} className="text-cyan-300" />
+              <h2 className="mt-5 text-lg font-bold">{title}</h2>
+              <p className="mt-2 text-sm leading-relaxed text-white/55">{copy}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -31,10 +31,10 @@ function toError(value: unknown): Error {
 
 function DefaultFallback({ error, resetError }: ErrorFallbackProps) {
   return (
-    <div className="flex min-h-screen w-full items-center justify-center bg-[#f5f2eb] p-6">
+    <div className="flex min-h-screen w-full items-center justify-center bg-slate-950 p-6 text-white">
       <div className="w-full max-w-lg text-center">
-        <h1 className="font-display text-3xl text-[#111]">Something went wrong</h1>
-        <p className="mt-3 text-sm text-black/60">
+        <h1 className="font-display text-3xl">Something went wrong</h1>
+        <p className="mt-3 text-sm text-white/60">
           This part of the site hit an error. Try again or call Tint Pros Tampa directly.
         </p>
         {import.meta.env.DEV ? (
@@ -45,7 +45,7 @@ function DefaultFallback({ error, resetError }: ErrorFallbackProps) {
         <button
           type="button"
           onClick={resetError}
-          className="focus-ring mt-5 bg-[#d22f25] px-5 py-3 text-sm font-bold text-white"
+            className="focus-ring mt-5 rounded-full bg-cyan-300 px-5 py-3 text-sm font-bold text-slate-950"
         >
           Try again
         </button>
