@@ -1,3 +1,16 @@
 {
+  "buildCommand": "pnpm --filter @workspace/tint-pros-tampa build",
+  "outputDirectory": "artifacts/tint-pros-tampa/dist/public",
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
